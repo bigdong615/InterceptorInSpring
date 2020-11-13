@@ -28,7 +28,7 @@ public class UserController {
 		return "success";
 
 	}
-
+	@RequestMapping("/logout")
 	public String logout(HttpSession httpSession) throws Exception {
 
 		httpSession.invalidate();
